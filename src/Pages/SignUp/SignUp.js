@@ -124,6 +124,7 @@ export default function SignUp({ setToggle, theme }) {
       setInvalidConfirmPasswordMessage("");
     }
   }, [password, confirmPassword]);
+  
   return (
     <Grid
       component="main"
@@ -136,6 +137,7 @@ export default function SignUp({ setToggle, theme }) {
         [theme.breakpoints.up("md")]: {
           paddingTop: "20vh",
         },
+        paddingBottom: "11rem",
       }}
     >
       <Box
@@ -143,7 +145,7 @@ export default function SignUp({ setToggle, theme }) {
           display: "flex",
           flexDirection: "column",
           margin: "auto",
-          width: "80%",
+          width: "70%",
           maxWidth: "800px",
         }}
       >
